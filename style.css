@@ -1,0 +1,338 @@
+/* POPPINS FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ecf0f1;
+}
+
+/* Header  */
+
+header {
+  height: 75vh;
+  background-color: #4416fe;
+  padding: 0 8rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 1.4rem;
+  margin-top: 2rem;
+}
+
+.nav-item-active {
+  background-color: #fff;
+  color: #4416fe;
+  padding: .4rem 1rem;
+  border-radius: 3px;
+  font-size: .8rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.header-text {
+  color: #fff;
+  margin-top: 9rem;
+}
+
+.header-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+.header-text p {
+  font-size: .8rem;
+  margin-top: 1rem;
+}
+
+.header-image {
+  position: absolute;
+  right: 0;
+  bottom: 6rem;
+}
+
+/* company */
+.companies {
+  padding: 3rem 0 0 8rem;
+}
+
+.company-items {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Righteous', sans-serif;
+}
+
+.company-items:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+/* ---Api section--- */
+
+
+.api {
+  padding: 0 8rem;
+  margin-top: 5rem;
+}
+
+.api-heading {
+  font-size: 1.8rem;
+}
+
+/* Card section */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 1rem 1.5rem;
+}
+
+.card-head {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.card-body {
+  font-size: .8rem;
+  color: #757575;
+}
+
+.card-active {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+
+}
+
+.card-head-active {
+  color: #4416fe;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* Blog section */
+
+section.blog-section {
+  margin: 0 10rem;
+  padding: 5rem 0;
+}
+
+.blog-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8rem;
+  margin-top: 5rem;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.blog-heading::after {
+  content: 'See All Articles';
+  color: #4416fe;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.blog-heading h1 {
+  font-size: 1.8rem;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+
+}
+
+
+.blog-card {
+  display: flex;
+  background-color: #fff;
+}
+
+.blog-content h6 {
+  color: #4416fe;
+  font-size: .8rem;
+  margin-bottom: .7rem;
+}
+
+.blog-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: .7rem;
+}
+
+.blog-content small {
+  font-size: 12px;
+  color: #757575;
+
+}
+
+.blog-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: .7rem;
+}
+
+.blog-bottom img {
+  margin-right: .9rem;
+}
+
+/* ---faq section--- */
+.faq-section {
+  margin-top: 3rem;
+  padding-left: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ccd5fc;
+}
+
+.faq-content h2 {
+  font-size: 1.8rem;
+}
+
+.faq-content h4 {
+  font-size: 1rem;
+  color: #757575;
+  font-weight: 300;
+}
+
+.faq-content h3 {
+  font-size: 1.2rem;
+  color: #000;
+  font-weight: 600;
+  margin: 2rem 0;
+
+}
+
+.faq-content button {
+  background-color: #4416fe;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: .6rem 1.1rem;
+}
+
+/* Download section */
+
+.download-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem 8rem;
+}
+
+.download-content h1 {
+  font-size: 1.3rem;
+
+}
+
+.download-content span {
+  font-weight: 400;
+}
+
+form {
+  background-color: #ccd5fc;
+  border-radius: 88px;
+  width: 25rem;
+  height: 4rem;
+  padding: 0.6rem 2rem;
+}
+
+form input {
+  border: none;
+  font-size: .8rem;
+  color: #000;
+  padding: .7rem 2.2rem;
+  text-align: start;
+  background: transparent;
+  ;
+}
+
+.download-email button {
+  background-color: #4416fe;
+  color: #fff;
+  border: none;
+  padding: .9rem 1.2rem;
+  border-radius: 30px;
+}
+
+/* Footer */
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4416fe;
+  color: #fff;
+  padding: 3rem 8rem;
+}
+
+.footer-left img {
+  height: 2.3rem;
+}
+
+.footer-left .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.list-items {
+  margin-right: 1rem;
+  font-size: .8rem;
+}
+
+.footer-logos {
+  margin-right: 1rem;
+  height: 1.8rem;
+}
+
+.logos-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
