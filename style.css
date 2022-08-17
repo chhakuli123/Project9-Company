@@ -144,73 +144,66 @@ nav {
   font-size: 1.5rem;
 }
 
-/* Blog section */
-
-section.blog-section {
-  margin: 0 10rem;
-  padding: 5rem 0;
-}
-
-.blog-heading {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 8rem;
-  margin-top: 5rem;
-  font-size: 1rem;
-  align-items: center;
-}
-
-.blog-heading::after {
-  content: 'See All Articles';
-  color: #4416fe;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
+/* <!-- Blog section --> */
 .blog-heading h1 {
   font-size: 1.8rem;
+
+  font-weight: bold;
+  margin: 20px 8rem;
 }
 
+/* <!-- Blogs --> */
 .blog-cards {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 8rem;
+  margin: 10px 8rem;
+}
 
+/* forr both cards  */
+.blog-card {
+  background-color: #fff;
+
+  border-top-left-radius: 45px;
+  margin-right: 30px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
 
-.blog-card {
-  display: flex;
-  background-color: #fff;
+
+.blog-bottom {
+  position: relative;
+  top: 255px;
+  right: 119px;
+}
+
+.blog-content {
+  padding-left: 20px;
+  line-height: 16px;
 }
 
 .blog-content h6 {
-  color: #4416fe;
-  font-size: .8rem;
-  margin-bottom: .7rem;
+  color: #5f37fc;
+  margin-top: 25px;
 }
 
 .blog-content h3 {
-  font-size: 1.1rem;
-  margin-bottom: .7rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .blog-content small {
-  font-size: 12px;
-  color: #757575;
-
+  font-weight: lighter;
+  margin-top: 10px;
+  text-align: left;
 }
 
-.blog-bottom {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: .7rem;
-}
-
-.blog-bottom img {
-  margin-right: .9rem;
+.blog-author {
+  position: relative;
+  top: 8rem;
+  right: 3.5rem;
+  padding: 0px;
 }
 
 /* ---faq section--- */
@@ -335,4 +328,126 @@ form input {
   list-style: none;
   padding: 0;
   margin-top: 1.5rem;
+}
+
+/* --media querry-- */
+@media screen and (max-width:1100px) {
+  .blog-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 1.8rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .blog-bottom {
+    display: none;
+  }
+
+  .blog-author {
+    display: none;
+  }
+
+  .blog-content h3 {
+    font-weight: bold;
+    font-size: .7rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog-content {
+    padding-left: 10px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    margin: 20px;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item-active {
+    display: none;
+  }
+
+  .hero-container {
+    /* flex-direction: column; */
+
+  }
+
+  .header-text {
+    margin-top: 4rem;
+  }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .companies {
+    display: flex;
+    padding: 3rem 0 0 0rem;
+
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .blog-cards {
+    flex-direction: column;
+
+  }
+
+  .blog-card {
+    margin-top: 2rem;
+  }
+
+
+
+  .download-section {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    flex-direction: column;
+  }
+
+  .footer-left img {
+    margin-left: 5rem;
+  }
+
+  .faq-content {
+    margin-right: 5rem;
+  }
+
+  .faq-image img {
+    display: none;
+  }
+
+  .faq-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq-content button {
+    margin-bottom: 1rem;
+  }
+
+  .download-content span {
+    margin-left: 2rem;
+  }
 }
