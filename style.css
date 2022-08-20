@@ -15,69 +15,64 @@ body {
 }
 
 /* Header  */
-
 header {
-  height: 75vh;
-  background-color: #4416fe;
-  padding: 0 8rem;
-}
-
-.nav-container {
+  background-color: #4617fe;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
+  height: 70vh;
+  padding: 0 90px;
 }
 
 nav {
+  order: 2;
+  margin-left: auto;
+  height: 12vh;
   display: flex;
-  justify-content: flex-end;
+  gap: 30px;
   align-items: center;
+  color: #FFFFFF;
+  font-size: 13px;
 }
 
-.nav-item {
-  color: #fff;
-  font-size: 1rem;
-  margin-right: 1.4rem;
-  margin-top: 2rem;
+nav .nav-item {
+  cursor: pointer;
 }
 
-.nav-item-active {
-  background-color: #fff;
-  color: #4416fe;
-  padding: .4rem 1rem;
-  border-radius: 3px;
-  font-size: .8rem;
-  margin-right: 1rem;
-  margin-top: 2rem;
+nav .nav-item-active {
+  background-color: #FFFFFF;
+  color: #4617fe;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.hero-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 6rem;
+header div .logo {
+  order: 1;
+  margin-top: 50px;
+
 }
 
-.header-text {
-  color: #fff;
-  margin-top: 9rem;
+header .header-text {
+  position: absolute;
+  margin-top: 180px;
+  color: #FFFFFF;
 }
 
-.header-text h2 {
+header .header-text h2 {
   font-size: 2.5rem;
-  line-height: 1.6;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
 }
 
-.header-text p {
-  font-size: .8rem;
-  margin-top: 1rem;
-}
-
-.header-image {
+header div:last-child {
   position: absolute;
   right: 0;
-  bottom: 6rem;
+  width: 640px;
+  height: 500px;
+  top: 90px;
+}
+
+header div .header-image {
+  width: 100%;
 }
 
 /* company */
@@ -159,7 +154,7 @@ nav {
   margin: 10px 8rem;
 }
 
-/* forr both cards  */
+/* for both cards  */
 .blog-card {
   background-color: #fff;
 
@@ -168,8 +163,6 @@ nav {
   display: flex;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
-
-
 
 .blog-bottom {
   position: relative;
@@ -330,17 +323,47 @@ form input {
   margin-top: 1.5rem;
 }
 
-/* --media querry-- */
+/* --media query-- */
 @media screen and (max-width:1100px) {
   .blog-cards {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10px 1.8rem;
-    flex-direction: column;
   }
+
+  header div .header-image {
+    display: none;
+  }
+
+  .blog-card {
+    margin-top: 2rem;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .faq-image {
+    display: none;
+  }
+
+
 }
 
-@media screen and (max-width:500px) {
+@media only screen and (max-width: 950px) {
+  header {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  header div:last-child {
+    display: none;
+  }
+
+  nav {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+
   .blog-bottom {
     display: none;
   }
@@ -349,44 +372,54 @@ form input {
     display: none;
   }
 
-  .blog-content h3 {
-    font-weight: bold;
-    font-size: .7rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  header div .logo {
+    order: 1;
+    margin-top: 50px;
+    width: 100px;
+    margin-right: 40px;
   }
 
-  .blog-content {
-    padding-left: 10px;
-    line-height: 15px;
+  .blog-image img {
+    width: 177px;
+    height: 100%;
   }
+
+  .header-text {
+    padding: 0 20px;
+  }
+
+  nav .nav-item-active {
+    background-color: #FFFFFF;
+    color: #4617fe;
+    padding: 5px 20px;
+    border-radius: 4px;
+    min-width: 50px;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
-  nav {
-    margin: 20px;
-  }
 
-  .nav-item {
-    display: none;
+
+  nav {
+    margin-top: 20px;
+    overflow-x: auto;
   }
 
   .nav-item-active {
     display: none;
   }
 
-  .hero-container {
-    /* flex-direction: column; */
-
-  }
-
   .header-text {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .header-text h2 {
+    letter-spacing: 1px;
     font-size: 1.5rem;
-    line-height: 1.6;
+    line-height: 1;
   }
 
   .header-text p {
@@ -404,23 +437,30 @@ form input {
 
   }
 
-  .cards {
-    flex-direction: column;
-  }
-
   .blog-cards {
-    flex-direction: column;
-
+    margin-left: 3.5rem;
   }
 
   .blog-card {
     margin-top: 2rem;
-  }
+    margin-right: -81px;
 
+  }
 
 
   .download-section {
     flex-direction: column;
+  }
+
+  form {
+    margin-top: 2rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 0rem 1.5rem;
+  }
+
+  .download-email button {
+    margin-left: 2.8rem;
   }
 
   .footer-section {
