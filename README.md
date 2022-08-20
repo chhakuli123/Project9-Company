@@ -1,4 +1,5 @@
-# Project 9 | Company ![Project 9](https://img.shields.io/badge/Project%20-9-green) ![bootcamp](https://img.shields.io/badge/JS-Bootcamp-yellow)
+# Project 9 | Company
+ ![Project 9](https://img.shields.io/badge/Project%20-9-green) ![bootcamp](https://img.shields.io/badge/JS-Bootcamp-yellow) ![lco](https://img.shields.io/badge/iNeuron-LCO-green)
 
 ### By Chhakuli
 
